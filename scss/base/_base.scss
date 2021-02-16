@@ -21,8 +21,32 @@ ul li {
 }
 
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:400,700&display=swap');
 $fonts: 'Open Sans', 'Roboto', sans-serif;
 body {
-    font-family: $fonts;
+    font-family: 'Roboto', sans-serif;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+// Global classes
+.def-container {
+	width: 100%;
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+.top-container {
+	width: 100%;
+	max-width: 1585px;
+	margin: 0 auto;
+}
+
+.text-center {
+	text-align: center;
+}
+
+p {
+	line-height: 1.5;
 }
