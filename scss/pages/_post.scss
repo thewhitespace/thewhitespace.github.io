@@ -1,0 +1,41 @@
+.post {
+	.post-banner .post-container {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.post-banner {
+		min-height: 732px;
+		background: #61FFD9;
+		margin: 15px;
+		border-radius: 19px;
+
+		&__content {
+			margin-right: 110px;
+		}
+
+		&__content h1 {
+			font-family: $playfair;
+			font-weight: 900;
+			font-size: 47px;
+		}
+		.post-container {
+			padding-top: 55px;
+		}
+
+		&__thumbnail {
+			position: relative;
+		}
+
+		&__thumbnail .thumbnail {
+			position: absolute;
+			right: 0;
+			top: 30px;
+			height: 736px;
+			width: 738px;
+			border-radius: 19px;
+			background-size: cover;
+			background-position: center center;
+		}
+	}
+}

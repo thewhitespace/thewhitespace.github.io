@@ -18,7 +18,7 @@
 		}
 
 		&__proj-title h1 {
-			font-family: 'Playfair Display';
+			font-family: $playfair;
 			font-weight: 900;
 			font-size: 47px;
 			margin: 0 0 20px 0;
@@ -45,7 +45,7 @@
 			}
 
 			&__descrip {
-				font-family: 'Roboto Mono', sans-serif;
+				font-family: $roboto;
 			}
 		}
 
@@ -78,7 +78,7 @@
 				align-items: center;
 
 				&__index {
-					font-family: 'Roboto Mono';
+					font-family: $roboto-mono;
 					font-size: 18px;
 				}
 
@@ -127,7 +127,7 @@
 		&__title h2 {
 			margin-bottom: 20px;
 			position: relative;
-			font-family: 'PlayFair Display';
+			font-family: $playfair;
 			font-size: 72px;
 			color: #222;
 
@@ -143,14 +143,14 @@
 
 		h3 {
 			margin: 0;
-			font-family: 'Roboto Mono';
+			font-family: $roboto-mono;
 			font-size: 24px;
 			font-weight: 400;
 			color: #333;
 		}
 
 		p {
-			font-family: 'Roboto Mono';
+			font-family: $roboto-mono;
 			font-size: 18px;
 			font-weight: 400;
 			color: #555;

@@ -22,6 +22,10 @@ ul li {
 
 // Fonts
 $fonts: 'Open Sans', 'Roboto', sans-serif;
+$playfair: 'Playfair Display';
+$roboto: 'Roboto';
+$roboto-mono: 'Roboto Mono';
+$quicksand: 'Quicksand';
 body {
     font-family: 'Roboto', sans-serif;
 }
@@ -49,4 +53,10 @@ body {
 
 p {
 	line-height: 1.5;
+}
+
+.post-container {
+	width: 100%;
+	max-width: 1400px;
+	margin: 0 auto;
 }
