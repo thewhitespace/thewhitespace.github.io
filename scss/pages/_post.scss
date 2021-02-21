@@ -19,6 +19,12 @@
 			font-weight: 900;
 			font-size: 47px;
 		}
+
+		&__content p {
+			font-size: 18px;
+			letter-spacing: 0.03em;
+			color: #333;
+		}
 		.post-container {
 			padding-top: 55px;
 		}
@@ -36,6 +42,64 @@
 			border-radius: 19px;
 			background-size: cover;
 			background-position: center center;
+		}
+
+		&__thumbnail img {
+			z-index: -1;
+			position: absolute;
+			bottom: -52px;
+			right: -51px;
+		}
+	}
+
+	.post-content {
+		&__container {
+			width: 100%;
+			max-width: 863px;
+			margin: 200px auto 0 auto;
+		}
+
+		p {
+			font-size: 18px;
+			color: #333;
+		}
+
+		img {
+			margin: 20px 0 20px 0;
+		}
+
+		.shareto-container {
+			display: inline-block;
+		}
+
+		.shareto {
+			display: inline-block;
+			padding: 0;
+			margin: 0 0 0 8px;
+
+			li {
+				margin-right: 5px;
+				display: inline-block;
+				display: inline-flex;
+				justify-content: center;
+				align-items: center;
+				width: 32px;
+				height: 32px;
+				border-radius: 50%;
+				border: 1px solid #333;
+				background: #fff;	
+				transition: all 0.3s ease-in-out;
+				cursor: pointer;
+
+				&:hover {
+					background: #333;
+					color: #fff;
+				}
+
+				&:last-child {
+					margin-right: 0;
+				}
+			}
 		}
 	}
 }

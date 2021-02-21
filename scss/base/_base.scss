@@ -26,8 +26,9 @@ $playfair: 'Playfair Display';
 $roboto: 'Roboto';
 $roboto-mono: 'Roboto Mono';
 $quicksand: 'Quicksand';
+$font: 'Roboto', 'Roboto Mono', 'Quicksand', 'Playfair Display', sans-serif;
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: $font;
 }
 
 * {

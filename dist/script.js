@@ -37,13 +37,15 @@ function sliderImagesOne(){
   $('#jsSliderImages1').slick({
     cssEase: 'cubic-bezier(.74,.01,.04,.97)',
     arrows: false,
-    asNavFor: '#jsSliderTitle'
+    asNavFor: '#jsSliderTitle',
+    speed: 1000
   })
 
   $('#jsSliderImages2').slick({
     cssEase: 'cubic-bezier(.74,.01,.04,.97)',
     arrows: false,
     asNavFor: '#jsSliderImages1',
+    speed: 1000
   })
   $('#jsSliderImages3').slick({
     cssEase: 'cubic-bezier(.74,.01,.04,.97)',
@@ -53,15 +55,24 @@ function sliderImagesOne(){
     prevArrow: $('#prevArrow'),
     nextArrow: $('#nextarrow'),
     autoplay: true,
-    autoplaySpeed: 2000
+    autoplaySpeed: 1000,
+    speed: 1000
   })
 
   $('#jsSliderImages2').on('afterChange', function(event, slick, currentSlide, nextSlide){
     let currSlide = $('#jsSliderImages3 .slick-active').attr('data-slick-index');
     $('.sliderNav__index').html('0' + currSlide);
   });
-}
 
+  $('#jsMembersSlider').slick({
+    cssEase: 'cubic-bezier(.74,.01,.04,.97)',
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    slidesToShow: 4,
+    infinite: true
+  })
+}
 
 $(function () {
   scroll();
