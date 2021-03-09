@@ -68,7 +68,7 @@ function sliderImagesOne(){
     cssEase: 'cubic-bezier(.74,.01,.04,.97)',
     arrows: false,
     autoplay: true,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 3000,
     slidesToShow: 4,
     infinite: true
   })

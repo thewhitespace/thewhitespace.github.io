@@ -114,6 +114,11 @@
 			width: 100%;
 			max-width: 80%;
 			margin-left: auto;
+
+			.slick-list.draggable {
+				overflow-y: visible;
+				height: 620px;
+			}
 		}
 
 		&__slider {
@@ -124,7 +129,25 @@
 		&__item {
 			width: 312px;
 			height: 465px;
-			background-size: cover;
+			background-size: cover;	
+		}
+
+		&__content {
+			position: absolute;
+			bottom: -70px;
+			font-family: $roboto-mono
+		}
+
+		&__content p {
+			font-size: 18px;
+			color: #333;
+			margin: 0;
+			padding: 0;
+		}
+
+		&__content span {
+			font-size: 14px;
+			color: #555;
 		}
 
 		.slick-list {
@@ -135,6 +158,248 @@
 			margin: 0 15px;
 			border-radius: 19px;
 			overflow: hidden;
+		}
+	}
+
+	.intro {
+		padding: 120px 0;
+		background: #61ffd9;
+
+		&__container {
+			width: 100%;
+			max-width: 1348px;
+			margin: 0 auto;
+		}
+
+		&__item {
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-column-gap: 40px;
+			margin-bottom: 60px;
+			align-items: center;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+			img {
+				order: 1;
+			}
+
+			@media screen and (min-width: 768px){
+				grid-template-columns: 1fr 1fr;
+
+				img {
+					order: unset;
+				}
+			}
+		}
+
+		&__item img {
+			width: 100%;
+			max-width: 633px;
+			border-radius: 18px;
+		}
+
+		&__content {
+			order: 2;
+			@media screen and (min-width: 768px){
+				order: unset;
+			}
+		}
+
+		&__content h3 {
+			font-family: $playfair;
+			font-size: 24px;
+			font-weight: 700;
+		}
+
+
+		&__content p {
+			font-family: $roboto;
+			font-size: 18px;
+		}
+	}
+
+	.our-work {
+		padding: 120px 0;
+
+		&__container {
+			width: 100%;
+			max-width: 1343px;
+			margin: 0 auto;
+		}
+
+		h3 {
+			font-family: $playfair;
+			font-size: 24px;
+		}
+
+		&__grid {
+			display: grid;
+			height: 1814px;
+			// grid-template-columns: 1fr 351px 351px;
+			// grid-template-rows: 261px 261px 225px 450px 78px 524px;
+			grid-template-columns: 1fr;
+			grid-template-rows: 397px 397px 397px 397px 397px 397px 397px;
+			grid-column-gap: 15px;
+			grid-row-gap: 15px;
+			grid-template-areas: 
+			"left1"
+			"left2"
+			"left3"
+			"right1"
+			"right2"
+			"sub-left"
+			"sub-right";
+
+			& > div {
+				background-size: cover;
+				border-radius: 18px;
+			}
+
+			@media screen and (min-width: 768px){
+				grid-template-columns: 1fr 351px 351px;
+				grid-template-rows: 261px 261px 225px 450px 78px 524px;
+				grid-template-areas: 
+				"left1 right1 right1"
+				"left1 right1 right1"
+				"left2 right1 right1"
+				"left2 right2 right2"
+				"left3 right2 right2"
+				"left3 sub-left sub-right";
+			}
+		}
+
+		#left1 {
+			grid-area: left1;
+		}
+
+		#left2 {
+			grid-area: left2;
+		}
+
+		#left3 {
+			grid-area: left3;
+		}
+
+		#right1 {
+			grid-area: right1;
+		}
+
+		#right2 {
+			grid-area: right2;
+		}
+
+		#sub-left {
+			grid-area: sub-left;
+		}
+
+		#sub-right {
+			grid-area: sub-right;
+		}
+	}
+
+	.contact {
+		.container h3 {
+			font-family: $playfair;
+			font-size: 36px;
+		}
+
+		&__form {
+			display: grid;
+			grid-template-columns: 1fr 617px;
+			grid-column-gap: 30px;
+		}
+
+		.input-form {
+			display: grid;
+			margin-bottom: 30px;
+
+			span {
+				display: block;
+				font-size: 18px;
+				font-family: $roboto;
+				margin-bottom: 4px;
+				color: #333;
+			}
+
+			input {
+				width: 100%;
+				border: 0px;
+				border-bottom: 1px solid #333;
+				padding: 5px 8px;
+				outline: 0;
+			}
+
+			&.w-50 {
+				grid-template-columns: 1fr 1fr;
+				grid-column-gap: 30px;
+			}
+
+			&.w-100 {
+				grid-template-columns: 1fr;
+				label {
+					width: 100%;
+				}
+
+				textarea {
+					width: 100%;
+					border: 0px;
+					border-bottom: 1px solid #333;
+					margin-bottom: 15px;
+				}
+
+				input[type="submit"] {
+					display: inline-block;
+					width: 100%;
+					max-width: 79px;
+					font-family: $roboto;
+					font-weight: 900;
+					color: #fff;
+					background: #333;
+					border-radius: 5px;
+					margin-left: auto;
+				}
+			}
+		}
+
+		&__sharer {
+			padding-left: 30px;
+			h4 a {
+				color: #333;
+				font-size: 18px;
+				font-family: $roboto;
+			}
+
+			.findUs {
+				display: flex;
+				align-items: center;
+
+				span {
+					display: inline-block;
+					margin-right: 15px;
+				}
+			}
+
+			ul {
+				display: inline-block;
+				padding: 0;
+				margin: 0;
+
+				li {
+					margin-right: 15px;
+
+					&:last-child {
+						margin-right: 0;
+					}
+				}
+
+				li a {
+					color: #333;
+					font-size: 33px;
+				}
+			}
 		}
 	}
 }
