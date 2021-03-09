@@ -27,15 +27,15 @@
           <img src="./assets/images/logo.png" alt="">
         </div>
         <ul class="header__nav">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Our Work</a></li>
-          <li><a href="#">Contact Us</a></li>
+          <li><a href="#topbanner" class="scroll">Home</a></li>
+          <li><a href="#aboutus" class="scroll">About Us</a></li>
+          <li><a href="#ourwork" class="scroll">Our Work</a></li>
+          <li><a href="#contact" class="scroll">Contact Us</a></li>
         </ul>
       </div>
     </header>
     <main class="home">
-      <section class="top-banner">
+      <section class="top-banner" id="topbanner">
         <div class="top-container">
           <div class="visuals1 visuals slider1">
             <div class="visuals__container">
@@ -101,7 +101,7 @@
           </div>
         </div>
       </section>
-      <section class="global about" style="margin-top: 10em; margin-bottom: 3em;">
+      <section class="global about" style="margin-top: 10em; margin-bottom: 3em;" id="aboutus">
         <div class="about__container">
           <div class="about__title">
             <h2>
@@ -207,7 +207,7 @@
           </div>
         </div>
       </section>
-      <section class="our-work">
+      <section class="our-work" id="ourwork">
         <div class="our-work__container">
           <h3>Our Work</h3>
           <div class="our-work__grid">
@@ -221,7 +221,7 @@
           </div>
         </div>
       </section>
-      <section class="contact">
+      <section class="contact" id="contact">
         <div class="container">
           <h3>Let's Collaborate</h3>
           <div class="contact__form">
@@ -270,7 +270,17 @@
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="container">
+        <p>&copy; Whitespace</p>
+        <ul>
+          <li><a href="#topbanner" class="scroll">Home</a></li>
+          <li><a href="#aboutus" class="scroll">About Us</a></li>
+          <li><a href="#ourwork" class="scroll">Our Work</a></li>
+          <li><a href="#contact" class="scroll">Contact Us</a></li>
+        </ul>
+      </div>
+    </footer>
 
     <script src="dist/jquery.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>

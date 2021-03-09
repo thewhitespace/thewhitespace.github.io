@@ -74,8 +74,29 @@ function sliderImagesOne(){
   })
 }
 
+// const smooth_scroll = () => {
+//   $("a.scroll").each(function () {
+//     $(this).on("click", function (event) {
+//       if (this.hash !== "") {
+//         event.preventDefault();
+//         var hash = this.hash;
+//         $("html, body").animate(
+//           {
+//             scrollTop: $(hash).offset().top,
+//           },
+//           1000,
+//           function () {
+//             $(".header__container").addClass("active");
+//           }
+//         );
+//       }
+//     });
+//   });
+// };
+
 $(function () {
   scroll();
   sliderTitle();
   sliderImagesOne();
+  smooth_scroll();
 });
